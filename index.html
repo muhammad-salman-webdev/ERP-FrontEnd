@@ -1,0 +1,4748 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunrise Consultants</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+
+    <!-- Fontawesome icons -->
+    <link rel="stylesheet" href="icons/css/all.min.css" />
+
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- eChart CDN -->
+    <!-- <script src="https://fastly.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script> -->
+    <script src="chart.min.js"></script>
+  </head>
+  <body>
+    <section class="main-section">
+      <!-- Header -->
+      <header>
+        <!-- Left side content -->
+        <div class="logo-project-container">
+          <div class="logo-icon">
+            <a>
+              <i class="fa-solid fa-house-blank"></i>
+            </a>
+            <a class="logo">
+              <img src="images/logo.png" alt="logo" />
+            </a>
+          </div>
+          <label for="project-select" class="project-type">
+            <span>Sunrise Consulting and Scheduling Corp</span>
+            <select id="project-select">
+              <option selected disabled> Choose Project </option>
+              <option>Project 1 </option>
+              <option>Project 2</option>
+              <option>Project 3</option>
+              <option>Project 4</option>
+            </select>
+          </label>
+        </div>
+
+        <!-- Project Name -->
+        <div class="project-name">
+          <p>19018_L - Project A - Queens NY</p>
+          <span>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-users"></i>
+          </span>
+        </div>
+
+        <!-- Right side content -->
+        <div class="bell-profile-container">
+          <div class="bell-icons">
+            <a>
+              <i class="fa-light fa-circle-question"></i>
+            </a>
+            <a class="has-notifications">
+              <i class="fa-light fa-bell"></i>
+            </a>
+          </div>
+          <div class="profile-img-name">
+            <div class="profile-img">
+              <img src="images/profile-img.jpg" alt="Profile Img" />
+            </div>
+            <span class="profile-name">Edgar Torrey</span>
+          </div>
+        </div>
+      </header>
+      <!-- Main Content -->
+      <div class="left-sidebar-main-container">
+        <!-- Left Sidebar -->
+        <div class="left-sidebar-container">
+          <ul>
+            <li>
+              <a href="#" title="Home">
+                <i class="fa-light fa-house-blank"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="Server">
+                <i class="fa-light fa-server"></i>
+              </a>
+            </li>
+            <li class="active">
+              <a href="#" title="Poll">
+                <i class="fa-thin fa-square-poll-horizontal"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="Analysis">
+                <i class="fa-thin fa-chart-line-up"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="Blocks">
+                <i class="fa-thin fa-buildings"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="Users">
+                <i class="fa-thin fa-users"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="Folder">
+                <i class="fa-thin fa-folder-open"></i>
+              </a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#" title="Settings">
+                <i class="fa-thin fa-gear"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="Logout">
+                <i class="fa-thin fa-arrow-right-from-bracket"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Main Staff container -->
+        <div class="main-container">
+          <!-- Action Bar -->
+          <div class="actions-container">
+            <div class="actions-cate-container">
+              <!-- Gantt Tab -->
+              <div class="action-tool-tab gantt-view-tab">
+                <div class="tools-container">
+                  <label class="hamburger" for="hamburger">
+                    <i class="fa-regular fa-bars"></i>
+                    <input type="checkbox" id="hamburger" />
+                  </label>
+                </div>
+                <div class="tab-name"> Menu </div>
+              </div>
+              <!-- Clipboard Tab -->
+              <div class="action-tool-tab clipboard-tab">
+                <div class="tools-container">
+                  <span title="Cutt">
+                    <img src="images/Nexus Icons/cutt.png" alt="Cutt" />
+                  </span>
+                  <span title="Brush">
+                    <img src="images/Nexus Icons/brush.png" alt="Brush" />
+                  </span>
+                  <span title="Copy">
+                    <img src="images/Nexus Icons/copy.png" alt="Copy" />
+                  </span>
+                  <span title="Paste">
+                    <img src="images/Nexus Icons/paper-board.png" alt="Paste" />
+                  </span>
+                </div>
+                <div class="tab-name">Clipboard</div>
+              </div>
+              <!-- Font Tab -->
+              <div class="action-tool-tab font-tab">
+                <div class="tools-container">
+                  <div class="font-selects">
+                    <select class="font-family-select">
+                      <option selected>Calibri</option>
+                      <option>Inter</option>
+                      <option>System UI</option>
+                      <option>Sans Serif</option>
+                      <option>Poppins</option>
+                    </select>
+                    <select class="font-size-select">
+                      <option>4</option>
+                      <option>6</option>
+                      <option>8</option>
+                      <option selected>10</option>
+                      <option>12</option>
+                      <option>14</option>
+                      <option>16</option>
+                      <option>18</option>
+                    </select>
+                  </div>
+                  <div class="font-actions-container">
+                    <div class="font-action" title="Bold">
+                      <img src="images/Nexus Icons/bold.png" alt="Bold" />
+                    </div>
+                    <div class="font-action" title="Italic">
+                      <img src="images/Nexus Icons/italic.png" alt="Italic" />
+                    </div>
+                    <div class="font-action" title="Underline">
+                      <img
+                        src="images/Nexus Icons/underline.png"
+                        alt="Underline" />
+                    </div>
+                    <div class="font-action" title="Line through">
+                      <img
+                        src="images/Nexus Icons/line-through.png"
+                        alt="Line through" />
+                    </div>
+                    <div class="font-action" title="Color">
+                      <img src="images/Nexus Icons/color.png" alt="Color" />
+                    </div>
+                    <div class="font-action" title="Background">
+                      <img
+                        src="images/Nexus Icons/background.png"
+                        alt="Background" />
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-name">Font</div>
+              </div>
+              <!-- Gantt View Tab -->
+              <div class="action-tool-tab gantt-tab">
+                <div class="tools-container">
+                  <div title="Gantt">
+                    <img src="images/Nexus Icons/gantt-view.png" alt="Gantt" />
+                  </div>
+                  <select>
+                    <option>View</option>
+                    <option>V 1</option>
+                    <option>V 2</option>
+                    <option>V 3</option>
+                  </select>
+                </div>
+              </div>
+              <!-- View Tab -->
+              <div class="action-tool-tab view-tab">
+                <div class="tools-container">
+                  <div class="view-tool" title="No Filter">
+                    <div>
+                      <img
+                        src="images/Nexus Icons/no-filter.png"
+                        alt="No Filter" />
+                    </div>
+                    <span>No Filter</span>
+                  </div>
+                  <div class="view-tool" title="View">
+                    <div title="No Filter">
+                      <img
+                        src="images/Nexus Icons/folder.png"
+                        alt="No Filter" />
+                    </div>
+                    <select>
+                      <option>No View</option>
+                      <option>Option 1</option>
+                      <option>Option 2</option>
+                      <option>Option 3</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="tab-name">View</div>
+              </div>
+              <!-- Organize Tab -->
+              <div class="action-tool-tab organize-tab">
+                <div class="tools-container">
+                  <div class="organize-tool" title="Sort">
+                    <div>
+                      <img src="images/Nexus Icons/sort.png" alt="Sort" />
+                    </div>
+                    <span> Sort </span>
+                  </div>
+                  <div class="organize-tool" title="Group">
+                    <div>
+                      <img src="images/Nexus Icons/group.png" alt="Group" />
+                    </div>
+                    <span> Group </span>
+                  </div>
+                  <div class="organize-tool" title="Outline">
+                    <div>
+                      <img src="images/Nexus Icons/outline.png" alt="Outline" />
+                    </div>
+                    <select>
+                      <option>Outline</option>
+                      <option>Option 1</option>
+                      <option>Option 2</option>
+                      <option>Option 3</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="tab-name">Organize</div>
+              </div>
+              <!--  -->
+              <div class="last-six-tabs-responsive-container">
+                <!-- Schedule Tab-->
+                <div class="action-tool-tab schedule-tab">
+                  <div class="tools-container">
+                    <div class="schedule-tool" title="Calculate">
+                      <div>
+                        <img
+                          src="images/Nexus Icons/calculate.png"
+                          alt="Calculate" />
+                      </div>
+                      <span>Calculate</span>
+                    </div>
+                    <div class="schedule-tool" title="Scenario">
+                      <div>
+                        <img
+                          src="images/Nexus Icons/scenorio.png"
+                          alt="Scenario" />
+                      </div>
+                      <span>Scenario</span>
+                    </div>
+                    <div class="schedule-tool" title="Baseline">
+                      <div>
+                        <img
+                          src="images/Nexus Icons/baseline.png"
+                          alt="Baseline" />
+                      </div>
+                      <span>Baseline</span>
+                    </div>
+                    <div class="schedule-tool" title="Update">
+                      <div>
+                        <img src="images/Nexus Icons/update.png" alt="Update" />
+                      </div>
+                      <span>Update</span>
+                    </div>
+                  </div>
+                  <div class="tab-name">Schedule</div>
+                </div>
+                <!--  -->
+                <div class="last-five-tabs-responsive-container">
+                  <div class="action-tool-tab cells-tab">
+                    <div class="tools-container">
+                      <div class="cells-tool" title="Add Column">
+                        <div>
+                          <img
+                            src="images/Nexus Icons/add-column.png"
+                            alt="Add Column" />
+                        </div>
+                        <span>Add Column</span>
+                      </div>
+                      <div class="cells-tool" title="Wrap text">
+                        <div>
+                          <img
+                            src="images/Nexus Icons/wrap-text.png"
+                            alt="Wrap Text" />
+                        </div>
+                        <span>Wrap Text</span>
+                      </div>
+                      <div class="cells-tool" title="Add Row">
+                        <div>
+                          <img
+                            src="images/Nexus Icons/add-row.png"
+                            alt="Add Row" />
+                        </div>
+                        <span>Add Row</span>
+                      </div>
+                      <div class="cells-tool" title="Replace">
+                        <div>
+                          <img
+                            src="images/Nexus Icons/replace.png"
+                            alt="Replace" />
+                        </div>
+                        <span>Replace</span>
+                      </div>
+                      <div class="cells-tool" title="Row Height">
+                        <div>
+                          <img
+                            src="images/Nexus Icons/row-height.png"
+                            alt="Row Height" />
+                        </div>
+                        <select>
+                          <option>Row Height</option>
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                        </select>
+                      </div>
+                      <div class="cells-tool" title="Filldown">
+                        <div>
+                          <img
+                            src="images/Nexus Icons/filldown.png"
+                            alt="Filldown" />
+                        </div>
+                        <span>Filldown</span>
+                      </div>
+                    </div>
+                    <div class="tab-name">Cells</div>
+                  </div>
+                  <!--  -->
+                  <div class="last-four-tabs-responsive-container">
+                    <!-- WBS tab -->
+                    <div class="action-tool-tab wbs-tab">
+                      <div class="tools-container">
+                        <div class="wbs-tool" title="Indent">
+                          <div>
+                            <img
+                              src="images/Nexus Icons/indent.png"
+                              alt="Indent" />
+                          </div>
+                          <span>Indent</span>
+                        </div>
+                        <div class="wbs-tool" title="Outdent">
+                          <div>
+                            <img
+                              src="images/Nexus Icons/outdent.png"
+                              alt="Outdent" />
+                          </div>
+                          <span>Outdent</span>
+                        </div>
+                        <div class="wbs-tool" title="Add">
+                          <div>
+                            <img src="images/Nexus Icons/add.png" alt="Add" />
+                          </div>
+                          <span>Add</span>
+                        </div>
+                        <div class="wbs-tool" title="Remove">
+                          <div>
+                            <img
+                              src="images/Nexus Icons/remove.png"
+                              alt="Remove" />
+                          </div>
+                          <span>Remove</span>
+                        </div>
+                      </div>
+                      <div class="tab-name">WBS</div>
+                    </div>
+                    <!--  -->
+                    <div class="last-three-tabs-responsive-container">
+                      <!-- Logic Tab -->
+                      <div class="action-tool-tab logic-tab">
+                        <div class="tools-container">
+                          <div class="logic-tool" title="Add Links">
+                            <div>
+                              <img
+                                src="images/Nexus Icons/add-links.png"
+                                alt="Add Links" />
+                            </div>
+                            <select>
+                              <option>Add Links</option>
+                              <option>Option 1</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                            </select>
+                          </div>
+                          <div class="logic-tool" title="Add Lags">
+                            <div>
+                              <img
+                                src="images/Nexus Icons/add-lags.png"
+                                alt="Add Lags" />
+                            </div>
+                            <select>
+                              <option>Add Lags</option>
+                              <option>Option 1</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                            </select>
+                          </div>
+                          <div class="logic-tool" title="Remove Links">
+                            <div>
+                              <img
+                                src="images/Nexus Icons/remove-links.png"
+                                alt="Remove Links" />
+                            </div>
+                            <select>
+                              <option>Remove Links</option>
+                              <option>Option 1</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                            </select>
+                          </div>
+                          <div class="logic-tool" title="Remove Lags">
+                            <div>
+                              <img
+                                src="images/Nexus Icons/remove-lags.png"
+                                alt="Remove Lags" />
+                            </div>
+                            <span>Remove Lags</span>
+                          </div>
+                          <div class="logic-tool" title="Relationships">
+                            <div>
+                              <img
+                                src="images/Nexus Icons/relationships.png"
+                                alt="Relationships" />
+                            </div>
+                            <span>Relationships</span>
+                          </div>
+                          <div class="logic-tool" title="Driving Path">
+                            <div>
+                              <img
+                                src="images/Nexus Icons/driving-path.png"
+                                alt="Driving Path" />
+                            </div>
+                            <span>Driving Path</span>
+                          </div>
+                        </div>
+                        <div class="tab-name">Logic</div>
+                      </div>
+                      <!--  -->
+                      <div class="last-two-tabs-responsive-container">
+                        <!-- Tools Tab -->
+                        <div class="action-tool-tab tools-tab">
+                          <div class="tools-container">
+                            <div class="tools-tool" title="Critical">
+                              <div>
+                                <img
+                                  src="images/Nexus Icons/critical.png"
+                                  alt="Critical" />
+                              </div>
+                              <select>
+                                <option>Critical</option>
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                              </select>
+                            </div>
+                            <div class="tools-tool" title="Bulk Change">
+                              <div>
+                                <img
+                                  src="images/Nexus Icons/bulk-change.png"
+                                  alt="Bulk Change" />
+                              </div>
+                              <span>Bulk Change</span>
+                            </div>
+                            <div class="tools-tool" title="Spotlight">
+                              <div>
+                                <img
+                                  src="images/Nexus Icons/spotlight.png"
+                                  alt="Spotlight" />
+                              </div>
+                              <span>Spotlight</span>
+                            </div>
+                          </div>
+                          <div class="tab-name">Tools</div>
+                        </div>
+                        <!--  -->
+                        <div class="last-one-tab-responsive-container">
+                          <!-- Format Tab -->
+                          <div class="action-tool-tab format-tab">
+                            <div class="tools-container">
+                              <div
+                                class="format-tool"
+                                title="Conditional Format">
+                                <div>
+                                  <img
+                                    src="images/Nexus Icons/conditional-format.png"
+                                    alt="Conditional Format" />
+                                </div>
+                                <span>Conditional Format</span>
+                              </div>
+                              <div class="format-tool" title="Bar Chart Format">
+                                <div>
+                                  <img
+                                    src="images/Nexus Icons/bar-chart-format.png"
+                                    alt="Bar Chart Format" />
+                                </div>
+                                <span>Bar Chart Format</span>
+                              </div>
+                              <div
+                                class="format-tool"
+                                title="Relationship Lines">
+                                <div>
+                                  <img
+                                    src="images/Nexus Icons/relationship-lines.png"
+                                    alt="Relationship Lines" />
+                                </div>
+                                <span>Relationship Lines</span>
+                              </div>
+                            </div>
+                            <div class="tab-name">Format</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="actions-right-icons-container">
+              <div class="project-search-container">
+                <div class="project-search-input">
+                  <i class="fa-light fa-magnifying-glass"></i>
+                  <input type="text" placeholder="Search Activities" />
+                </div>
+                <div class="print-toggle-btns">
+                  <label
+                    class="resposive-action-toggle-btn"
+                    for="responsive-action-tab-toggle"
+                    title="More Actions">
+                    <input type="checkbox" id="responsive-action-tab-toggle" />
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </label>
+
+                  <i class="fa-light fa-print"></i>
+                </div>
+              </div>
+              <div class="other-icons">
+                <a>
+                  <i class="fa-light fa-up-right-from-square"></i>
+                </a>
+                <a id="gear-popup-toggle-btn">
+                  <i class="fa-light fa-gear"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- main content container -->
+          <div class="sidebars-bottom-navigation-main-container">
+            <!-- Left Sidebar Panel -->
+            <div class="left-toggle-side-panel-container">
+              <div class="left-sidebar-panel-main">
+                <h1>Left Sidebar Panel</h1>
+              </div>
+            </div>
+            <!-- Main Content in the center -->
+            <div class="main-content-container">
+              <h1>Main Section</h1>
+            </div>
+            <!-- Right Sidebar Panel -->
+            <div class="right-sidebar-container">
+              <div class="right-sidebar-item">
+                <div class="sidebar-btn" title="Messages">
+                  <img src="images/Nexus Icons/icons/message-icon.png" alt="" />
+                </div>
+                <div class="sidebar-popup">
+                  <div class="popup-content-main">
+                    <div class="header">
+                      <b>Messages</b>
+                      <i class="fa-regular fa-xmark"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-sidebar-item">
+                <div class="sidebar-btn" title="Stars">
+                  <img src="images/Nexus Icons/icons/star-icon.png" alt="" />
+                </div>
+                <div class="sidebar-popup">
+                  <div class="popup-content-main">
+                    <div class="header">
+                      <b>Stars</b>
+                      <i class="fa-regular fa-xmark"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-sidebar-item">
+                <div class="sidebar-btn" title="Measurements">
+                  <img
+                    src="images/Nexus Icons/icons/measuring-tape-paper-icon.png"
+                    alt="" />
+                </div>
+                <div class="sidebar-popup">
+                  <div class="popup-content-main">
+                    <div class="header">
+                      <b>Measurements</b>
+                      <i class="fa-regular fa-xmark"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-sidebar-item">
+                <div class="sidebar-btn" title="Calendar">
+                  <img src="images/Nexus Icons/icons/calender-clock.png" />
+                </div>
+                <div class="sidebar-popup">
+                  <div class="popup-content-main">
+                    <div class="header">
+                      <b>Calendar</b>
+                      <i class="fa-regular fa-xmark"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-sidebar-item">
+                <div class="sidebar-btn" title="Passed">
+                  <img
+                    src="images/Nexus Icons/icons/speed-test-passed-icon.png"
+                    alt="" />
+                </div>
+                <div class="sidebar-popup">
+                  <div class="popup-content-main">
+                    <div class="header">
+                      <b>Passed</b>
+                      <i class="fa-regular fa-xmark"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-sidebar-item">
+                <div class="sidebar-btn" title="User Verified">
+                  <img
+                    src="images/Nexus Icons/icons/verified-user-icon.png"
+                    alt="" />
+                </div>
+                <div class="sidebar-popup">
+                  <div class="popup-content-main">
+                    <div class="header">
+                      <b>User Verified</b>
+                      <i class="fa-regular fa-xmark"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-sidebar-item">
+                <div class="sidebar-btn" title="Clock">
+                  <img src="images/Nexus Icons/icons/clock-icon.png" alt="" />
+                </div>
+                <div class="sidebar-popup">
+                  <div class="popup-content-main">
+                    <div class="header">
+                      <b>Clock</b>
+                      <i class="fa-regular fa-xmark"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-sidebar-item">
+                <div class="sidebar-btn" title="Spotlight">
+                  <img
+                    src="images/Nexus Icons/icons/spotlight-icon.png"
+                    alt="" />
+                </div>
+                <div class="sidebar-popup">
+                  <div class="popup-content-main">
+                    <div class="header">
+                      <b>Spotlight</b>
+                      <i class="fa-regular fa-xmark"></i>
+                    </div>
+                    <div class="spotlight-popup-content">
+                      <div class="spotlight-project-name">
+                        <span>19018_A Project A - Queens NY</span>
+                        <i class="fa-regular fa-ellipsis-vertical"></i>
+                      </div>
+                    </div>
+                    <button class="add-spotlight-btn">
+                      <div class="fa-regular fa-plus"></div>
+                      <span>Add Spotlight</span>
+                    </button>
+                    <ul class="spotlight-projects-ul">
+                      <li class="spotlight-project">
+                        <div class="eye-close-icons">
+                          <label class="eye-toggle-btn">
+                            <input type="checkbox" checked />
+                            <i class="fa-light fa-eye"></i>
+                            <i class="fa-light fa-eye-slash"></i>
+                          </label>
+                          <i class="fa-light fa-xmark"></i>
+                        </div>
+                        <div class="spotlight-project-main">
+                          <div
+                            class="side-color"
+                            style="background: #9a1591"></div>
+                          <div class="all-content">
+                            <div class="date-select">
+                              <b>Start</b>
+                              <input type="date" />
+                            </div>
+                            <div class="date-select">
+                              <b>Finish</b>
+                              <input type="date" />
+                            </div>
+                            <div class="line-type-select">
+                              <b>Line Type</b>
+                              <div>
+                                <span>
+                                  <div></div>
+                                </span>
+                                <select>
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="color-select">
+                              <b>Line Color</b>
+                              <div>
+                                <span style="background: #f8bef4"></span>
+                                <select>
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="duration-toggle">
+                              <b>Show Duration</b>
+                              <label>
+                                <input type="checkbox" />
+                                <i class="fa-solid fa-check"></i>
+                              </label>
+                            </div>
+                            <div class="color-select">
+                              <b>Fill Color</b>
+                              <div>
+                                <span style="background: #9a1591"></span>
+                                <select>
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="calendar-popup">
+                              <b>Select Calender</b>
+                              <label class="popup-open-btn">
+                                <i class="fa-light fa-calendar-days"></i>
+                                <span>5 Day Workweek</span>
+                                <input type="checkbox" />
+                              </label>
+                              <div class="spotlight-calendar-popup-container">
+                                Popup
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <label class="height-toggle-icon">
+                          <input type="checkbox" />
+                          <i class="fa-light fa-chevron-up"></i>
+                        </label>
+                      </li>
+                      <li class="spotlight-project">
+                        <div class="eye-close-icons">
+                          <label class="eye-toggle-btn">
+                            <input type="checkbox" />
+                            <i class="fa-light fa-eye"></i>
+                            <i class="fa-light fa-eye-slash"></i>
+                          </label>
+                          <i class="fa-light fa-xmark"></i>
+                        </div>
+                        <div class="spotlight-project-main">
+                          <div
+                            class="side-color"
+                            style="background: #f8f35a"></div>
+                          <div class="all-content">
+                            <div class="date-select">
+                              <b>Start</b>
+                              <input type="date" />
+                            </div>
+                            <div class="date-select">
+                              <b>Finish</b>
+                              <input type="date" />
+                            </div>
+                            <div class="line-type-select">
+                              <b>Line Type</b>
+                              <div>
+                                <span>
+                                  <div></div>
+                                </span>
+                                <select>
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="color-select">
+                              <b>Line Color</b>
+                              <div>
+                                <span style="background: #1f1f1f"></span>
+                                <select>
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="duration-toggle">
+                              <b>Show Duration</b>
+                              <label>
+                                <input type="checkbox" />
+                                <i class="fa-solid fa-check"></i>
+                              </label>
+                            </div>
+                            <div class="color-select">
+                              <b>Fill Color</b>
+                              <div>
+                                <span style="background: #f8f35a"></span>
+                                <select>
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="calendar-popup">
+                              <b>Select Calender</b>
+                              <label class="popup-open-btn">
+                                <i class="fa-light fa-calendar-days"></i>
+                                <span>5 Day Workweek</span>
+                                <input type="checkbox" />
+                              </label>
+                              <div class="spotlight-calendar-popup-container">
+                                Popup
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <label class="height-toggle-icon">
+                          <input type="checkbox" />
+                          <i class="fa-light fa-chevron-up"></i>
+                        </label>
+                      </li>
+                      <li class="spotlight-project">
+                        <div class="eye-close-icons">
+                          <label class="eye-toggle-btn">
+                            <input type="checkbox" checked />
+                            <i class="fa-light fa-eye"></i>
+                            <i class="fa-light fa-eye-slash"></i>
+                          </label>
+                          <i class="fa-light fa-xmark"></i>
+                        </div>
+                        <div class="spotlight-project-main">
+                          <div
+                            class="side-color"
+                            style="background: #9a1591"></div>
+                          <div class="all-content">
+                            <div class="date-select">
+                              <b>Start</b>
+                              <input type="date" />
+                            </div>
+                            <div class="date-select">
+                              <b>Finish</b>
+                              <input type="date" />
+                            </div>
+                            <div class="line-type-select">
+                              <b>Line Type</b>
+                              <div>
+                                <span>
+                                  <div></div>
+                                </span>
+                                <select>
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="color-select">
+                              <b>Line Color</b>
+                              <div>
+                                <span style="background: #f8bef4"></span>
+                                <select>
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="duration-toggle">
+                              <b>Show Duration</b>
+                              <label>
+                                <input type="checkbox" />
+                                <i class="fa-solid fa-check"></i>
+                              </label>
+                            </div>
+                            <div class="color-select">
+                              <b>Fill Color</b>
+                              <div>
+                                <span style="background: #9a1591"></span>
+                                <select>
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="calendar-popup">
+                              <b>Select Calender</b>
+                              <label class="popup-open-btn">
+                                <i class="fa-light fa-calendar-days"></i>
+                                <span>5 Day Workweek</span>
+                                <input type="checkbox" />
+                              </label>
+                              <div class="spotlight-calendar-popup-container">
+                                Popup
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <label class="height-toggle-icon">
+                          <input type="checkbox" />
+                          <i class="fa-light fa-chevron-up"></i>
+                        </label>
+                      </li>
+                      <li class="spotlight-project">
+                        <div class="eye-close-icons">
+                          <label class="eye-toggle-btn">
+                            <input type="checkbox" />
+                            <i class="fa-light fa-eye"></i>
+                            <i class="fa-light fa-eye-slash"></i>
+                          </label>
+                          <i class="fa-light fa-xmark"></i>
+                        </div>
+                        <div class="spotlight-project-main">
+                          <div
+                            class="side-color"
+                            style="background: #f8f35a"></div>
+                          <div class="all-content">
+                            <div class="date-select">
+                              <b>Start</b>
+                              <input type="date" />
+                            </div>
+                            <div class="date-select">
+                              <b>Finish</b>
+                              <input type="date" />
+                            </div>
+                            <div class="line-type-select">
+                              <b>Line Type</b>
+                              <div>
+                                <span>
+                                  <div></div>
+                                </span>
+                                <select>
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="color-select">
+                              <b>Line Color</b>
+                              <div>
+                                <span style="background: #1f1f1f"></span>
+                                <select>
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="duration-toggle">
+                              <b>Show Duration</b>
+                              <label>
+                                <input type="checkbox" />
+                                <i class="fa-solid fa-check"></i>
+                              </label>
+                            </div>
+                            <div class="color-select">
+                              <b>Fill Color</b>
+                              <div>
+                                <span style="background: #f8f35a"></span>
+                                <select>
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="calendar-popup">
+                              <b>Select Calender</b>
+                              <label class="popup-open-btn">
+                                <i class="fa-light fa-calendar-days"></i>
+                                <span>5 Day Workweek</span>
+                                <input type="checkbox" />
+                              </label>
+                              <div class="spotlight-calendar-popup-container">
+                                Popup
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <label class="height-toggle-icon">
+                          <input type="checkbox" />
+                          <i class="fa-light fa-chevron-up"></i>
+                        </label>
+                      </li>
+                      <li class="spotlight-project">
+                        <div class="eye-close-icons">
+                          <label class="eye-toggle-btn">
+                            <input type="checkbox" checked />
+                            <i class="fa-light fa-eye"></i>
+                            <i class="fa-light fa-eye-slash"></i>
+                          </label>
+                          <i class="fa-light fa-xmark"></i>
+                        </div>
+                        <div class="spotlight-project-main">
+                          <div
+                            class="side-color"
+                            style="background: #9a1591"></div>
+                          <div class="all-content">
+                            <div class="date-select">
+                              <b>Start</b>
+                              <input type="date" />
+                            </div>
+                            <div class="date-select">
+                              <b>Finish</b>
+                              <input type="date" />
+                            </div>
+                            <div class="line-type-select">
+                              <b>Line Type</b>
+                              <div>
+                                <span>
+                                  <div></div>
+                                </span>
+                                <select>
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="color-select">
+                              <b>Line Color</b>
+                              <div>
+                                <span style="background: #f8bef4"></span>
+                                <select>
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="duration-toggle">
+                              <b>Show Duration</b>
+                              <label>
+                                <input type="checkbox" />
+                                <i class="fa-solid fa-check"></i>
+                              </label>
+                            </div>
+                            <div class="color-select">
+                              <b>Fill Color</b>
+                              <div>
+                                <span style="background: #9a1591"></span>
+                                <select>
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="calendar-popup">
+                              <b>Select Calender</b>
+                              <label class="popup-open-btn">
+                                <i class="fa-light fa-calendar-days"></i>
+                                <span>5 Day Workweek</span>
+                                <input type="checkbox" />
+                              </label>
+                              <div class="spotlight-calendar-popup-container">
+                                Popup
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <label class="height-toggle-icon">
+                          <input type="checkbox" />
+                          <i class="fa-light fa-chevron-up"></i>
+                        </label>
+                      </li>
+                      <li class="spotlight-project">
+                        <div class="eye-close-icons">
+                          <label class="eye-toggle-btn">
+                            <input type="checkbox" />
+                            <i class="fa-light fa-eye"></i>
+                            <i class="fa-light fa-eye-slash"></i>
+                          </label>
+                          <i class="fa-light fa-xmark"></i>
+                        </div>
+                        <div class="spotlight-project-main">
+                          <div
+                            class="side-color"
+                            style="background: #f8f35a"></div>
+                          <div class="all-content">
+                            <div class="date-select">
+                              <b>Start</b>
+                              <input type="date" />
+                            </div>
+                            <div class="date-select">
+                              <b>Finish</b>
+                              <input type="date" />
+                            </div>
+                            <div class="line-type-select">
+                              <b>Line Type</b>
+                              <div>
+                                <span>
+                                  <div></div>
+                                </span>
+                                <select>
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="color-select">
+                              <b>Line Color</b>
+                              <div>
+                                <span style="background: #1f1f1f"></span>
+                                <select>
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="duration-toggle">
+                              <b>Show Duration</b>
+                              <label>
+                                <input type="checkbox" />
+                                <i class="fa-solid fa-check"></i>
+                              </label>
+                            </div>
+                            <div class="color-select">
+                              <b>Fill Color</b>
+                              <div>
+                                <span style="background: #f8f35a"></span>
+                                <select>
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="calendar-popup">
+                              <b>Select Calender</b>
+                              <label class="popup-open-btn">
+                                <i class="fa-light fa-calendar-days"></i>
+                                <span>5 Day Workweek</span>
+                                <input type="checkbox" />
+                              </label>
+                              <div class="spotlight-calendar-popup-container">
+                                Popup
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <label class="height-toggle-icon">
+                          <input type="checkbox" />
+                          <i class="fa-light fa-chevron-up"></i>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="right-sidebar-item">
+                <div class="sidebar-btn" title="Share">
+                  <img src="images/Nexus Icons/icons/share-icon.png" alt="" />
+                </div>
+                <div class="sidebar-popup">
+                  <div class="popup-content-main">
+                    <div class="header">
+                      <b>Share</b>
+                      <i class="fa-regular fa-xmark"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-sidebar-item">
+                <div class="sidebar-btn" title="Test">
+                  <img
+                    src="images/Nexus Icons/icons/test-lab-icon.png"
+                    alt="" />
+                </div>
+                <div class="sidebar-popup">
+                  <div class="popup-content-main">
+                    <div class="header">
+                      <b>Test</b>
+                      <i class="fa-regular fa-xmark"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-sidebar-item">
+                <div class="sidebar-btn" title="Steps">
+                  <img src="images/Nexus Icons/icons/steps-icon.png" alt="" />
+                </div>
+                <div class="sidebar-popup">
+                  <div class="popup-content-main">
+                    <div class="header">
+                      <b>Steps</b>
+                      <i class="fa-regular fa-xmark"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-sidebar-item">
+                <div class="sidebar-btn" title="Tree">
+                  <img
+                    src="images/Nexus Icons/icons/sub-tree-icon.png"
+                    alt="" />
+                </div>
+                <div class="sidebar-popup">
+                  <div class="popup-content-main">
+                    <div class="header">
+                      <b>Tree</b>
+                      <i class="fa-regular fa-xmark"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Bottom Panel  -->
+            <div class="main-bottom-toggle-panel-container">
+              <div class="bottom-panel-content-container">
+                <div class="drag-and-drop-elem"></div>
+                <div class="bottom-panel-header">
+                  <div class="bottom-panel-tabs-btns">
+                    <div
+                      class="bottom-panel-tab-btn"
+                      data-bottom-panel-btn="status">
+                      <span>Status</span>
+                    </div>
+                    <div
+                      class="bottom-panel-tab-btn"
+                      data-bottom-panel-btn="relationships">
+                      <span>Relationships</span>
+                    </div>
+                    <div
+                      class="bottom-panel-tab-btn"
+                      data-bottom-panel-btn="team">
+                      <span>Team</span>
+                    </div>
+                    <div
+                      class="bottom-panel-tab-btn"
+                      data-bottom-panel-btn="trades">
+                      <span>Trades</span>
+                    </div>
+                  </div>
+                  <div class="bottom-panel-actions-container">
+                    <button class="empty-btn">
+                      <span>A1000</span>
+                      <span>Mobilization</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="bottom-panel-tabs-container">
+                  <!--  -->
+                  <div class="bottom-panel-tab" data-bottom-panel-tab="status">
+                    <div class="bottom-panel-status-container">
+                      <!--  -->
+                      <div class="status-content-type general">
+                        <div class="bottom-status-title">General Info</div>
+                        <div class="bottom-status-body">
+                          <div class="bottom-body-row">
+                            <div class="label-container">Activity Type</div>
+                            <div class="content-container">
+                              <select>
+                                <option>Task Dependent</option>
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="bottom-body-row">
+                            <div class="label-container">Calendar</div>
+                            <div class="content-container">
+                              <span>5 Day with Holidays</span>
+                              <input type="date" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--  -->
+                      <div class="status-content-type">
+                        <div class="bottom-status-title">Duration</div>
+                        <div class="bottom-status-body">
+                          <div class="bottom-body-row">
+                            <div class="label-container">Total</div>
+                            <div class="content-container">
+                              <input
+                                type="text"
+                                value="40"
+                                data-text="Days"
+                                class="text-into-number-toggle-input" />
+                            </div>
+                          </div>
+                          <div class="bottom-body-row">
+                            <div class="label-container">Actual</div>
+                            <div class="content-container">
+                              <input
+                                type="text"
+                                value="10"
+                                data-text="Days"
+                                class="text-into-number-toggle-input" />
+                            </div>
+                          </div>
+                          <div class="bottom-body-row">
+                            <div class="label-container">Remainingx</div>
+                            <div class="content-container">
+                              <input
+                                type="text"
+                                value="30"
+                                data-text="Days"
+                                class="text-into-number-toggle-input" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--  -->
+                      <div class="status-content-type">
+                        <div class="bottom-status-title">Status</div>
+                        <div class="bottom-status-body">
+                          <div class="bottom-body-row">
+                            <div class="label-container">
+                              <label class="custom-check">
+                                <i class="fa-regular fa-check"></i>
+                                <input type="checkbox" />
+                              </label>
+                              <span>Started</span>
+                            </div>
+                            <div class="content-container">
+                              <input type="date" />
+                            </div>
+                          </div>
+                          <div class="bottom-body-row">
+                            <div class="label-container">
+                              <label class="custom-check">
+                                <i class="fa-regular fa-check"></i>
+                                <input type="checkbox" />
+                              </label>
+                              <span>Finished</span>
+                            </div>
+                            <div class="content-container">
+                              <input type="date" />
+                            </div>
+                          </div>
+                          <div class="bottom-body-row">
+                            <div class="label-container">Expected Finish</div>
+                            <div class="content-container">
+                              <input type="date" />
+                            </div>
+                          </div>
+                          <div class="bottom-body-row">
+                            <div class="label-container">% Complete</div>
+                            <div class="content-container">
+                              <input
+                                type="text"
+                                value="25"
+                                data-text="%"
+                                class="text-into-number-toggle-input" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--  -->
+                      <div class="status-content-type float">
+                        <div class="bottom-status-title">Float</div>
+                        <div class="bottom-status-body">
+                          <div class="bottom-body-row">
+                            <div class="label-container">Total Float</div>
+                            <div class="content-container">
+                              <span>20 Days</span>
+                            </div>
+                          </div>
+                          <div class="bottom-body-row">
+                            <div class="label-container">Free Float</div>
+                            <div class="content-container">
+                              <span>0 Days</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--  -->
+                      <div class="status-content-type">
+                        <div class="bottom-status-title">General Info</div>
+                        <div class="bottom-status-body">
+                          <div class="select-none-date-disable">
+                            <div class="bottom-body-row">
+                              <div class="label-container">Primary </div>
+                              <div class="content-container">
+                                <select>
+                                  <option value="none">none</option>
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="bottom-body-row">
+                              <div class="label-container">Date</div>
+                              <div class="content-container">
+                                <input type="date" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="select-none-date-disable">
+                            <div class="bottom-body-row">
+                              <div class="label-container">Secondary</div>
+                              <div class="content-container">
+                                <select>
+                                  <option value="none">none</option>
+                                  <option>Option 1</option>
+                                  <option>Option 2</option>
+                                  <option>Option 3</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="bottom-body-row">
+                              <div class="label-container">Date</div>
+                              <div class="content-container">
+                                <input type="date" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div
+                    class="bottom-panel-tab"
+                    data-bottom-panel-tab="relationships">
+                    <!--  -->
+                    <div class="double-adjustable-sections-container">
+                      <!--  -->
+                      <div class="adjustable-section">
+                        <div class="section-header">
+                          <h1>Predecessors</h1>
+                          <div>
+                            <button>
+                              <i class="fa-solid fa-plus"></i>
+                              <span>Assign</span>
+                            </button>
+                            <button>
+                              <i class="fa-solid fa-xmark"></i>
+                              <span>Remove</span>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="adjustable-table-container">
+                          <table class="resizable-dragable-table">
+                            <thead>
+                              <tr>
+                                <th>
+                                  <div>
+                                    <span>ID</span>
+                                    <i class="fa-solid fa-down-long"></i>
+                                  </div>
+                                </th>
+                                <th class="filtered">
+                                  <div>
+                                    <span>Name</span>
+                                    <i class="fa-solid fa-down-long"></i>
+                                  </div>
+                                </th>
+                                <th>
+                                  <div>
+                                    <span>Status</span>
+                                    <i class="fa-solid fa-down-long"></i>
+                                  </div>
+                                </th>
+                                <th>
+                                  <div>
+                                    <span>Duration</span>
+                                    <i class="fa-solid fa-down-long"></i>
+                                  </div>
+                                </th>
+                                <th>
+                                  <div>
+                                    <span>Driving</span>
+                                    <i class="fa-solid fa-down-long"></i>
+                                  </div>
+                                </th>
+                                <th>
+                                  <div>
+                                    <span>Relationship</span>
+                                    <i class="fa-solid fa-down-long"></i>
+                                  </div>
+                                </th>
+                                <th>
+                                  <div>
+                                    <span>Lag %</span>
+                                    <i class="fa-solid fa-down-long"></i>
+                                  </div>
+                                </th>
+                                <th>
+                                  <div>
+                                    <span>Lag Days</span>
+                                    <i class="fa-solid fa-down-long"></i>
+                                  </div>
+                                </th>
+                                <th>
+                                  <div>
+                                    <span>Critical</span>
+                                    <i class="fa-solid fa-down-long"></i>
+                                  </div>
+                                </th>
+                                <th>
+                                  <div>
+                                    <span>Start</span>
+                                    <i class="fa-solid fa-down-long"></i>
+                                  </div>
+                                </th>
+                                <th>
+                                  <div>
+                                    <span>Finish</span>
+                                    <i class="fa-solid fa-down-long"></i>
+                                  </div>
+                                </th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class="blue">
+                                  <div>
+                                    <a href="#"> A1000 </a>
+                                  </div>
+                                </td>
+                                <td class="blue">
+                                  <div>
+                                    <a href="#"> Mobilization </a>
+                                  </div>
+                                </td>
+                                <td class="status-td">
+                                  <div>
+                                    <div class="not-started"></div>
+                                    <span>Not Started</span>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div> 5 Days </div>
+                                </td>
+                                <td class="driving-td">
+                                  <div class="yes">
+                                    <i class="fa-solid fa-check"></i>
+                                  </div>
+                                </td>
+                                <td class="center">
+                                  <div> FS </div>
+                                </td>
+                                <td class="center">
+                                  <div> 50% </div>
+                                </td>
+                                <td class="lag-days-td">
+                                  <div>
+                                    <span>3d</span>
+                                    <div class="yes">
+                                      <i class="fa-regular fa-lock-keyhole"></i>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="critical-td">
+                                  <div>
+                                    <div class="yes"></div>
+                                    <span>Yes</span>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div> Mon, 11/21/22 </div>
+                                </td>
+                                <td>
+                                  <div> Sun, 11/21/22 </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="blue">
+                                  <div>
+                                    <a href="#"> A1001 </a>
+                                  </div>
+                                </td>
+                                <td class="blue">
+                                  <div> <a href="#"> Mobilization 01 </a></div>
+                                </td>
+                                <td class="status-td">
+                                  <div>
+                                    <div class="in-progress"></div>
+                                    <span>In Progress</span>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div> 8 Days </div>
+                                </td>
+                                <td class="driving-td">
+                                  <div class="no">
+                                    <i class="fa-solid fa-check"></i>
+                                  </div>
+                                </td>
+                                <td class="center">
+                                  <div> SF </div>
+                                </td>
+                                <td class="center">
+                                  <div> 20% </div>
+                                </td>
+                                <td class="lag-days-td">
+                                  <div>
+                                    <span>7d</span>
+                                    <div class="no">
+                                      <i class="fa-regular fa-lock-keyhole"></i>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="critical-td">
+                                  <div>
+                                    <div class="no"></div>
+                                    <span>No</span>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div> Wed, 11/21/22 </div>
+                                </td>
+                                <td>
+                                  <div> Thu, 11/21/22 </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="blue">
+                                  <div>
+                                    <a href="#"> A1000 </a>
+                                  </div>
+                                </td>
+                                <td class="blue">
+                                  <div>
+                                    <a href="#"> Mobilization </a>
+                                  </div>
+                                </td>
+                                <td class="status-td">
+                                  <div>
+                                    <div class="completed"></div>
+                                    <span>Complete</span>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div> 5 Days </div>
+                                </td>
+                                <td class="driving-td">
+                                  <div class="yes">
+                                    <i class="fa-solid fa-check"></i>
+                                  </div>
+                                </td>
+                                <td class="center">
+                                  <div> FS </div>
+                                </td>
+                                <td class="center">
+                                  <div> 50% </div>
+                                </td>
+                                <td class="lag-days-td">
+                                  <div>
+                                    <span>3d</span>
+                                    <div class="yes">
+                                      <i class="fa-regular fa-lock-keyhole"></i>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="critical-td">
+                                  <div>
+                                    <div class="yes"></div>
+                                    <span>Yes</span>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div> Mon, 11/21/22 </div>
+                                </td>
+                                <td>
+                                  <div> Sun, 11/21/22 </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="blue">
+                                  <div>
+                                    <a href="#"> A1001 </a>
+                                  </div>
+                                </td>
+                                <td class="blue">
+                                  <div> <a href="#"> Mobilization 01 </a></div>
+                                </td>
+                                <td class="status-td">
+                                  <div>
+                                    <div class="in-progress"></div>
+                                    <span>In Progress</span>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div> 8 Days </div>
+                                </td>
+                                <td class="driving-td">
+                                  <div class="no">
+                                    <i class="fa-solid fa-check"></i>
+                                  </div>
+                                </td>
+                                <td class="center">
+                                  <div> SF </div>
+                                </td>
+                                <td class="center">
+                                  <div> 20% </div>
+                                </td>
+                                <td class="lag-days-td">
+                                  <div>
+                                    <span>7d</span>
+                                    <div class="no">
+                                      <i class="fa-regular fa-lock-keyhole"></i>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="critical-td">
+                                  <div>
+                                    <div class="no"></div>
+                                    <span>No</span>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div> Wed, 11/21/22 </div>
+                                </td>
+                                <td>
+                                  <div> Thu, 11/21/22 </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <!--  -->
+                      <div class="double-adjustable-resizer"></div>
+                      <!--  -->
+                      <div class="adjustable-section">
+                        <div class="section-header">
+                          <h1>Successors</h1>
+                          <div>
+                            <button>
+                              <i class="fa-solid fa-plus"></i>
+                              <span>Assign</span>
+                            </button>
+                            <button>
+                              <i class="fa-solid fa-xmark"></i>
+                              <span>Remove</span>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="adjustable-table-container">
+                          <table class="resizable-dragable-table">
+                            <thead>
+                              <tr>
+                                <th>
+                                  <div>
+                                    <span>ID</span>
+                                    <i class="fa-solid fa-down-long"></i>
+                                  </div>
+                                </th>
+                                <th>
+                                  <div>
+                                    <span>Name</span>
+                                    <i class="fa-solid fa-down-long"></i>
+                                  </div>
+                                </th>
+                                <th>
+                                  <div>
+                                    <span>Status</span>
+                                    <i class="fa-solid fa-down-long"></i>
+                                  </div>
+                                </th>
+                                <th>
+                                  <div>
+                                    <span>Duration</span>
+                                    <i class="fa-solid fa-down-long"></i>
+                                  </div>
+                                </th>
+                                <th>
+                                  <div>
+                                    <span>Driving</span>
+                                    <i class="fa-solid fa-down-long"></i>
+                                  </div>
+                                </th>
+                                <th>
+                                  <div>
+                                    <span>Relationship</span>
+                                    <i class="fa-solid fa-down-long"></i>
+                                  </div>
+                                </th>
+                                <th>
+                                  <div>
+                                    <span>Lag %</span>
+                                    <i class="fa-solid fa-down-long"></i>
+                                  </div>
+                                </th>
+                                <th>
+                                  <div>
+                                    <span>Lag Days</span>
+                                    <i class="fa-solid fa-down-long"></i>
+                                  </div>
+                                </th>
+                                <th>
+                                  <div>
+                                    <span>Critical</span>
+                                    <i class="fa-solid fa-down-long"></i>
+                                  </div>
+                                </th>
+                                <th>
+                                  <div>
+                                    <span>Start</span>
+                                    <i class="fa-solid fa-down-long"></i>
+                                  </div>
+                                </th>
+                                <th>
+                                  <div>
+                                    <span>Finish</span>
+                                    <i class="fa-solid fa-down-long"></i>
+                                  </div>
+                                </th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class="blue">
+                                  <div>
+                                    <a href="#"> A1000 </a>
+                                  </div>
+                                </td>
+                                <td class="blue">
+                                  <div>
+                                    <a href="#"> Mobilization </a>
+                                  </div>
+                                </td>
+                                <td class="status-td">
+                                  <div>
+                                    <div class="not-started"></div>
+                                    <span>Not Started</span>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div> 5 Days </div>
+                                </td>
+                                <td class="driving-td">
+                                  <div class="yes">
+                                    <i class="fa-solid fa-check"></i>
+                                  </div>
+                                </td>
+                                <td class="center">
+                                  <div> FS </div>
+                                </td>
+                                <td class="center">
+                                  <div> 50% </div>
+                                </td>
+                                <td class="lag-days-td">
+                                  <div>
+                                    <span>3d</span>
+                                    <div class="yes">
+                                      <i class="fa-regular fa-lock-keyhole"></i>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="critical-td">
+                                  <div>
+                                    <div class="yes"></div>
+                                    <span>Yes</span>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div> Mon, 11/21/22 </div>
+                                </td>
+                                <td>
+                                  <div> Sun, 11/21/22 </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="blue">
+                                  <div>
+                                    <a href="#"> A1001 </a>
+                                  </div>
+                                </td>
+                                <td class="blue">
+                                  <div> <a href="#"> Mobilization 01 </a></div>
+                                </td>
+                                <td class="status-td">
+                                  <div>
+                                    <div class="in-progress"></div>
+                                    <span>In Progress</span>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div> 8 Days </div>
+                                </td>
+                                <td class="driving-td">
+                                  <div class="no">
+                                    <i class="fa-solid fa-check"></i>
+                                  </div>
+                                </td>
+                                <td class="center">
+                                  <div> SF </div>
+                                </td>
+                                <td class="center">
+                                  <div> 20% </div>
+                                </td>
+                                <td class="lag-days-td">
+                                  <div>
+                                    <span>7d</span>
+                                    <div class="no">
+                                      <i class="fa-regular fa-lock-keyhole"></i>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="critical-td">
+                                  <div>
+                                    <div class="no"></div>
+                                    <span>No</span>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div> Wed, 11/21/22 </div>
+                                </td>
+                                <td>
+                                  <div> Thu, 11/21/22 </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="blue">
+                                  <div>
+                                    <a href="#"> A1000 </a>
+                                  </div>
+                                </td>
+                                <td class="blue">
+                                  <div>
+                                    <a href="#"> Mobilization </a>
+                                  </div>
+                                </td>
+                                <td class="status-td">
+                                  <div>
+                                    <div class="completed"></div>
+                                    <span>Complete</span>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div> 5 Days </div>
+                                </td>
+                                <td class="driving-td">
+                                  <div class="yes">
+                                    <i class="fa-solid fa-check"></i>
+                                  </div>
+                                </td>
+                                <td class="center">
+                                  <div> FS </div>
+                                </td>
+                                <td class="center">
+                                  <div> 50% </div>
+                                </td>
+                                <td class="lag-days-td">
+                                  <div>
+                                    <span>3d</span>
+                                    <div class="yes">
+                                      <i class="fa-regular fa-lock-keyhole"></i>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="critical-td">
+                                  <div>
+                                    <div class="yes"></div>
+                                    <span>Yes</span>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div> Mon, 11/21/22 </div>
+                                </td>
+                                <td>
+                                  <div> Sun, 11/21/22 </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="blue">
+                                  <div>
+                                    <a href="#"> A1001 </a>
+                                  </div>
+                                </td>
+                                <td class="blue">
+                                  <div> <a href="#"> Mobilization 01 </a></div>
+                                </td>
+                                <td class="status-td">
+                                  <div>
+                                    <div class="in-progress"></div>
+                                    <span>In Progress</span>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div> 8 Days </div>
+                                </td>
+                                <td class="driving-td">
+                                  <div class="no">
+                                    <i class="fa-solid fa-check"></i>
+                                  </div>
+                                </td>
+                                <td class="center">
+                                  <div> SF </div>
+                                </td>
+                                <td class="center">
+                                  <div> 20% </div>
+                                </td>
+                                <td class="lag-days-td">
+                                  <div>
+                                    <span>7d</span>
+                                    <div class="no">
+                                      <i class="fa-regular fa-lock-keyhole"></i>
+                                    </div>
+                                  </div>
+                                </td>
+                                <td class="critical-td">
+                                  <div>
+                                    <div class="no"></div>
+                                    <span>No</span>
+                                  </div>
+                                </td>
+                                <td>
+                                  <div> Wed, 11/21/22 </div>
+                                </td>
+                                <td>
+                                  <div> Thu, 11/21/22 </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="bottom-panel-tab" data-bottom-panel-tab="team">
+                    <div class="double-adjustable-sections-container">
+                      <!--  -->
+                      <div class="adjustable-section">
+                        <div class="section-header">
+                          <h1>Team</h1>
+                          <div>
+                            <button>
+                              <i class="fa-solid fa-plus"></i>
+                              <span>Add Team Member</span>
+                            </button>
+                            <button>
+                              <i class="fa-solid fa-xmark"></i>
+                              <span>Remove</span>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="adjustable-table-container">
+                          <table class="resizable-dragable-table">
+                            <thead>
+                              <tr>
+                                <th no-resizing no-drag class="checkbox">
+                                  <div>
+                                    <label class="custom-check">
+                                      <i class="fa-regular fa-check"></i>
+                                      <input type="checkbox" />
+                                    </label>
+                                  </div>
+                                </th>
+                                <th class="filtered name">
+                                  <div>
+                                    <span>Name</span>
+                                    <i class="fa-solid fa-down-long"></i>
+                                  </div>
+                                </th>
+                                <th class="max-content">
+                                  <div>
+                                    <span>Company</span>
+                                    <i class="fa-solid fa-down-long"></i>
+                                  </div>
+                                </th>
+                                <th class="max-content">
+                                  <div>
+                                    <span>Role</span>
+                                    <i class="fa-solid fa-down-long"></i>
+                                  </div>
+                                </th>
+                                <th>
+                                  <div>
+                                    <span>Title</span>
+                                    <i class="fa-solid fa-down-long"></i>
+                                  </div>
+                                </th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class="checkbox">
+                                  <div>
+                                    <label class="custom-check">
+                                      <i class="fa-regular fa-check"></i>
+                                      <input type="checkbox" />
+                                    </label>
+                                  </div>
+                                </td>
+                                <td class="name">
+                                  <div> John Mouzakitis </div>
+                                </td>
+                                <td class="max-content">
+                                  <div> Sunrise </div>
+                                </td>
+                                <td class="max-content">
+                                  <div> Scheduler </div>
+                                </td>
+                                <td>
+                                  <div> President </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="checkbox">
+                                  <div>
+                                    <label class="custom-check">
+                                      <i class="fa-regular fa-check"></i>
+                                      <input type="checkbox" />
+                                    </label>
+                                  </div>
+                                </td>
+                                <td class="name">
+                                  <div> Johnny Mongelli </div>
+                                </td>
+                                <td class="max-content">
+                                  <div> Sunrise </div>
+                                </td>
+                                <td class="max-content">
+                                  <div> Scheduler </div>
+                                </td>
+                                <td>
+                                  <div>Vise President </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="checkbox">
+                                  <div>
+                                    <label class="custom-check">
+                                      <i class="fa-regular fa-check"></i>
+                                      <input type="checkbox" />
+                                    </label>
+                                  </div>
+                                </td>
+                                <td class="name">
+                                  <div> Nick Halksworth </div>
+                                </td>
+                                <td class="max-content">
+                                  <div> Sunrise </div>
+                                </td>
+                                <td class="max-content">
+                                  <div> Developer </div>
+                                </td>
+                                <td>
+                                  <div> CTO </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="checkbox">
+                                  <div>
+                                    <label class="custom-check">
+                                      <i class="fa-regular fa-check"></i>
+                                      <input type="checkbox" />
+                                    </label>
+                                  </div>
+                                </td>
+                                <td class="name">
+                                  <div> Anthony Vlahos </div>
+                                </td>
+                                <td class="max-content">
+                                  <div> Sunrise </div>
+                                </td>
+                                <td class="max-content">
+                                  <div> Scheduler </div>
+                                </td>
+                                <td>
+                                  <div> Consultant </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <!--  -->
+                      <div class="double-adjustable-resizer"></div>
+                      <!--  -->
+                      <div
+                        class="adjustable-section chart-table-adjustable-section">
+                        <div class="section-header">
+                          <div class="chart-table-toggle-select">
+                            <div class="chart-table-toggle-btn">
+                              <label class="table-btn">
+                                <input type="radio" name="table_chart_01" />
+                                <i class="fa-light fa-table-cells"></i>
+                              </label>
+                              <label class="chart-btn">
+                                <input
+                                  type="radio"
+                                  name="table_chart_01"
+                                  checked />
+                                <i class="fa-solid fa-chart-simple"></i>
+                              </label>
+                            </div>
+                            <select>
+                              <option>Number of Activities</option>
+                              <option>Option 1</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                            </select>
+                          </div>
+                          <div class="chart-baseline-btn-select">
+                            <div class="charts-baseline-btns">
+                              <label
+                                class="custom-check chart-table-baseline-toggle-btn">
+                                <i class="fa-regular fa-check"></i>
+                                <input type="checkbox" />
+                              </label>
+                              <p>Show Baseline</p>
+                            </div>
+                            <div class="select-type">
+                              <i class="fa-light fa-filter"></i>
+                              <select>
+                                <option>All Activities</option>
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                              </select>
+                            </div>
+                            <button>
+                              <i class="fa-light fa-gear"></i>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="chart-table-graphs-container">
+                          <div class="table-graph-container">
+                            <div class="table_graph_main"></div>
+                          </div>
+                          <div class="chart-graph-container">
+                            <div class="chart_graph_main"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="bottom-panel-tab" data-bottom-panel-tab="trades">
+                    <div class="double-adjustable-sections-container">
+                      <!--  -->
+                      <div class="adjustable-section">
+                        <div class="section-header">
+                          <h1>Trades</h1>
+                          <div>
+                            <button>
+                              <i class="fa-solid fa-plus"></i>
+                              <span>Add Trade</span>
+                            </button>
+                            <button>
+                              <i class="fa-solid fa-plus"></i>
+                              <span>Add Crew</span>
+                            </button>
+                            <button>
+                              <i class="fa-solid fa-xmark"></i>
+                              <span>Remove</span>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="adjustable-table-container">
+                          <table class="resizable-dragable-table">
+                            <thead>
+                              <tr>
+                                <th no-resizing no-drag class="checkbox">
+                                  <div>
+                                    <label class="custom-check">
+                                      <i class="fa-regular fa-check"></i>
+                                      <input type="checkbox" />
+                                    </label>
+                                  </div>
+                                </th>
+                                <th class="filtered name">
+                                  <div>
+                                    <span>Trade</span>
+                                    <i class="fa-solid fa-down-long"></i>
+                                  </div>
+                                </th>
+                                <th class="max-content">
+                                  <div>
+                                    <span>SCI Code</span>
+                                    <i class="fa-solid fa-down-long"></i>
+                                  </div>
+                                </th>
+                                <th>
+                                  <div>
+                                    <span>subcontractor</span>
+                                    <i class="fa-solid fa-down-long"></i>
+                                  </div>
+                                </th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr
+                                class="tr-dropdown-toggle"
+                                dropdown-id="dropdown_1">
+                                <td class="checkbox">
+                                  <div>
+                                    <label class="custom-check">
+                                      <i class="fa-regular fa-check"></i>
+                                      <input type="checkbox" />
+                                    </label>
+                                  </div>
+                                </td>
+                                <td class="name">
+                                  <div>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                    <span> Mason </span>
+                                  </div>
+                                </td>
+                                <td class="max-content">
+                                  <div> 03000 </div>
+                                </td>
+                                <td>
+                                  <div> ABCD </div>
+                                </td>
+                              </tr>
+                              <tr
+                                class="tr-dropdown-toggle-item"
+                                dropdown-id="dropdown_1">
+                                <td class="checkbox">
+                                  <div>
+                                    <label class="custom-check">
+                                      <i class="fa-regular fa-check"></i>
+                                      <input type="checkbox" />
+                                    </label>
+                                  </div>
+                                </td>
+                                <td class="name">
+                                  <div>
+                                    <i class="fa-light fa-users"></i>
+                                    <span> Mason 0001 </span>
+                                  </div>
+                                </td>
+                                <td class="max-content">
+                                  <div> 030001 </div>
+                                </td>
+                                <td>
+                                  <div> ABCD 01 </div>
+                                </td>
+                              </tr>
+                              <tr
+                                class="tr-dropdown-toggle-item"
+                                dropdown-id="dropdown_1">
+                                <td class="checkbox">
+                                  <div>
+                                    <label class="custom-check">
+                                      <i class="fa-regular fa-check"></i>
+                                      <input type="checkbox" />
+                                    </label>
+                                  </div>
+                                </td>
+                                <td class="name">
+                                  <div>
+                                    <i class="fa-light fa-users"></i>
+                                    <span> Mason 0002 </span>
+                                  </div>
+                                </td>
+                                <td class="max-content">
+                                  <div> 030002 </div>
+                                </td>
+                                <td>
+                                  <div> ABCD 02 </div>
+                                </td>
+                              </tr>
+                              <tr
+                                class="tr-dropdown-toggle-item"
+                                dropdown-id="dropdown_1">
+                                <td class="checkbox">
+                                  <div>
+                                    <label class="custom-check">
+                                      <i class="fa-regular fa-check"></i>
+                                      <input type="checkbox" />
+                                    </label>
+                                  </div>
+                                </td>
+                                <td class="name">
+                                  <div>
+                                    <i class="fa-light fa-users"></i>
+                                    <span> Mason 0003 </span>
+                                  </div>
+                                </td>
+                                <td class="max-content">
+                                  <div> 030003 </div>
+                                </td>
+                                <td>
+                                  <div> ABCD 03 </div>
+                                </td>
+                              </tr>
+                              <!--  -->
+                              <tr
+                                class="tr-dropdown-toggle"
+                                dropdown-id="dropdown_2">
+                                <td class="checkbox">
+                                  <div>
+                                    <label class="custom-check">
+                                      <i class="fa-regular fa-check"></i>
+                                      <input type="checkbox" />
+                                    </label>
+                                  </div>
+                                </td>
+                                <td class="name">
+                                  <div>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                    <span> Trade </span>
+                                  </div>
+                                </td>
+                                <td class="max-content">
+                                  <div> 5000 </div>
+                                </td>
+                                <td>
+                                  <div> XYZ </div>
+                                </td>
+                              </tr>
+                              <tr
+                                class="tr-dropdown-toggle-item"
+                                dropdown-id="dropdown_2">
+                                <td class="checkbox">
+                                  <div>
+                                    <label class="custom-check">
+                                      <i class="fa-regular fa-check"></i>
+                                      <input type="checkbox" />
+                                    </label>
+                                  </div>
+                                </td>
+                                <td class="name">
+                                  <div>
+                                    <i class="fa-light fa-users"></i>
+                                    <span> Trade 0001 </span>
+                                  </div>
+                                </td>
+                                <td class="max-content">
+                                  <div> 5001 </div>
+                                </td>
+                                <td>
+                                  <div> XYZ 01 </div>
+                                </td>
+                              </tr>
+                              <tr
+                                class="tr-dropdown-toggle-item"
+                                dropdown-id="dropdown_2">
+                                <td class="checkbox">
+                                  <div>
+                                    <label class="custom-check">
+                                      <i class="fa-regular fa-check"></i>
+                                      <input type="checkbox" />
+                                    </label>
+                                  </div>
+                                </td>
+                                <td class="name">
+                                  <div>
+                                    <i class="fa-light fa-users"></i>
+                                    <span> Trade 0002 </span>
+                                  </div>
+                                </td>
+                                <td class="max-content">
+                                  <div> 5002 </div>
+                                </td>
+                                <td>
+                                  <div> XYZ 02 </div>
+                                </td>
+                              </tr>
+                              <tr
+                                class="tr-dropdown-toggle-item"
+                                dropdown-id="dropdown_2">
+                                <td class="checkbox">
+                                  <div>
+                                    <label class="custom-check">
+                                      <i class="fa-regular fa-check"></i>
+                                      <input type="checkbox" />
+                                    </label>
+                                  </div>
+                                </td>
+                                <td class="name">
+                                  <div>
+                                    <i class="fa-light fa-users"></i>
+                                    <span> Trade 0003 </span>
+                                  </div>
+                                </td>
+                                <td class="max-content">
+                                  <div> 5003 </div>
+                                </td>
+                                <td>
+                                  <div> XYZ 03 </div>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <!--  -->
+                      <div class="double-adjustable-resizer"></div>
+                      <!--  -->
+                      <div
+                        class="adjustable-section chart-table-adjustable-section">
+                        <div class="section-header">
+                          <div class="chart-table-toggle-select">
+                            <div class="chart-table-toggle-btn">
+                              <label class="table-btn">
+                                <input type="radio" name="table_chart_02" />
+                                <i class="fa-light fa-table-cells"></i>
+                              </label>
+                              <label class="chart-btn">
+                                <input
+                                  type="radio"
+                                  name="table_chart_02"
+                                  checked />
+                                <i class="fa-solid fa-chart-simple"></i>
+                              </label>
+                            </div>
+                            <select>
+                              <option>Number of Activities</option>
+                              <option>Option 1</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                            </select>
+                          </div>
+                          <div class="chart-baseline-btn-select">
+                            <div class="charts-baseline-btns">
+                              <label
+                                class="custom-check chart-table-baseline-toggle-btn">
+                                <i class="fa-regular fa-check"></i>
+                                <input type="checkbox" />
+                              </label>
+                              <p>Show Baseline</p>
+                            </div>
+                            <div class="select-type">
+                              <i class="fa-light fa-filter"></i>
+                              <select>
+                                <option>All Activities</option>
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                              </select>
+                            </div>
+                            <button>
+                              <i class="fa-light fa-gear"></i>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="chart-table-graphs-container">
+                          <div class="table-graph-container">
+                            <div class="table_graph_main"></div>
+                          </div>
+                          <div class="chart-graph-container">
+                            <div class="chart_graph_main"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Last Footer section -->
+          <footer>
+            <a href="#" class="footer-logo">
+              <img src="images/nexus.png" alt="Nexus" />
+            </a>
+          </footer>
+        </div>
+      </div>
+      <!-- Gear Popup shows when click on gear icon in the header -->
+      <div class="gear-popup-main-container">
+        <div class="gear-popup-container">
+          <div class="gear-popup-header">
+            <div class="gear-popup-heading">Gantt Formatting</div>
+            <div class="gear-popup-buttons">
+              <i class="fa-regular fa-xmark gear-popup-close-btn"></i>
+              <div class="gear-popup-change-buttons">
+                <label>
+                  <input
+                    type="radio"
+                    checked
+                    id="gear-bar-popup-btn"
+                    name="gear-popup-change-buttons" />
+                  <span>Bars</span>
+                </label>
+                <label>
+                  <input
+                    type="radio"
+                    id="gear-chart-popup-btn"
+                    name="gear-popup-change-buttons" />
+                  <span>Chart</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="gear-popup-content-change-container">
+            <div id="gear-popup-bar-content">
+              <div class="gear-bar-content-main">
+                <div class="gear-content-container">
+                  <div class="gear-content-header">
+                    <b>Bars</b>
+                    <b>Display</b>
+                  </div>
+                  <div class="gear-content-body">
+                    <ul class="gear-bar-list">
+                      <li>
+                        <span>Milestones</span>
+                        <label class="custom-check">
+                          <i class="fa-regular fa-check"></i>
+                          <input type="checkbox" />
+                        </label>
+                      </li>
+                      <li>
+                        <span>Actual Work</span>
+                        <label class="custom-check">
+                          <i class="fa-regular fa-check"></i>
+                          <input type="checkbox" />
+                        </label>
+                      </li>
+                      <li>
+                        <span>Baseline Project</span>
+                        <label class="custom-check">
+                          <i class="fa-regular fa-check"></i>
+                          <input type="checkbox" />
+                        </label>
+                      </li>
+                      <li>
+                        <span>Critical</span>
+                        <label class="custom-check">
+                          <i class="fa-regular fa-check"></i>
+                          <input type="checkbox" />
+                        </label>
+                      </li>
+                      <li>
+                        <span>Critical</span>
+                        <label class="custom-check">
+                          <i class="fa-regular fa-check"></i>
+                          <input type="checkbox" />
+                        </label>
+                      </li>
+                      <li>
+                        <span>Baseline 1</span>
+                        <label class="custom-check">
+                          <i class="fa-regular fa-check"></i>
+                          <input type="checkbox" />
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="gear-content-container">
+                  <div class="gear-content-header">
+                    <b>Settings</b>
+                  </div>
+                  <div class="gear-content-body">
+                    <div class="gear-settings-container">
+                      <div class="settings-types-container">
+                        <div class="settings-type shape-select">
+                          <b>Shape</b>
+                          <div class="select-type">
+                            <i class="fa-regular fa-chevron-down"></i>
+                            <div>
+                              <span></span>
+                            </div>
+                            <select>
+                              <option>Option 1</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="settings-type fill-select">
+                          <b>Fill</b>
+                          <div class="select-type">
+                            <i class="fa-regular fa-chevron-down"></i>
+                            <div style="background: #88afd2"> </div>
+                            <select>
+                              <option>Option 1</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="settings-type border-select">
+                          <b>Border</b>
+                          <div class="select-type">
+                            <i class="fa-regular fa-chevron-down"></i>
+                            <div style="background: #002f59"> </div>
+                            <select>
+                              <option>Option 1</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="settings-type width-select">
+                          <b>Width</b>
+                          <div class="select-type">
+                            <i class="fa-regular fa-chevron-down"></i>
+                            <div>
+                              <i class="fa-regular fa-line-height"></i>
+                              <span>Large</span>
+                            </div>
+                            <select>
+                              <option>Option 1</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="settings-type row-select">
+                          <b>Row</b>
+                          <div class="select-type">
+                            <i class="fa-regular fa-chevron-down"></i>
+                            <div>
+                              <i class="fa-regular fa-pipe"></i>
+                            </div>
+                            <select>
+                              <option>Option 1</option>
+                              <option>Option 2</option>
+                              <option>Option 3</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="settings-preview-container">
+                        <h2>Preview</h2>
+                        <div class="settings-preview-border">
+                          <div></div>
+                          <span>
+                            <div></div>
+                            <span>Label</span>
+                          </span>
+                          <div></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="gear-content-container">
+                  <div class="gear-content-header">
+                    <b>Bars Options </b>
+                  </div>
+                  <div class="gear-content-body">
+                    <ul class="bars-options-list">
+                      <li>
+                        <label class="custom-check">
+                          <i class="fa-regular fa-check"></i>
+                          <input type="checkbox" />
+                        </label>
+                        <span>Show bars when collapsed</span>
+                      </li>
+                      <li>
+                        <label class="custom-check">
+                          <i class="fa-regular fa-check"></i>
+                          <input type="checkbox" />
+                        </label>
+                        <span>Show Bar necking for activity for non-work</span>
+                      </li>
+                      <li>
+                        <label class="custom-check">
+                          <i class="fa-regular fa-check"></i>
+                          <input type="checkbox" />
+                        </label>
+                        <span>Show Bar necking for Calendar for non-work</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="gear-content-container">
+                  <div class="gear-content-header">
+                    <b>Labels</b>
+                    <a>
+                      <i class="fa-regular fa-plus"></i>
+                      <span>Add Label</span>
+                    </a>
+                  </div>
+                  <div class="gear-content-body">
+                    <ul class="gear-labels-list">
+                      <li>
+                        <select>
+                          <option>Right</option>
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                        </select>
+                        <select>
+                          <option>Name</option>
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                        </select>
+                        <i class="fa-regular fa-xmark"></i>
+                      </li>
+                      <li>
+                        <select>
+                          <option>Right</option>
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                        </select>
+                        <select>
+                          <option>Name</option>
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                        </select>
+                        <i class="fa-regular fa-xmark"></i>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="gear-popup-chart-content">
+              <div class="gear-popup-chart-main-container">
+                <div class="gear-content-container">
+                  <div class="gear-content-header">
+                    <b>Timescale & Lines</b>
+                  </div>
+                  <div class="gear-content-body">
+                    <ul class="gear-menu-buttons-container">
+                      <li class="active" data-gear-menu-container="timescale">
+                        <span>Timescale</span>
+                        <i class="fa-regular fa-ellipsis-vertical"></i>
+                      </li>
+                      <li data-gear-menu-container="chartline">
+                        <span>Chart Line Formatting</span>
+                        <i class="fa-regular fa-ellipsis-vertical"></i>
+                      </li>
+                      <li data-gear-menu-container="data_date">
+                        <span>Data Date & Today Lines</span>
+                        <i class="fa-regular fa-ellipsis-vertical"></i>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="gear-menu-opts-main-container">
+                  <div
+                    class="gear-menu-opt-container active"
+                    data-gear-menu-container-name="timescale">
+                    <div class="gear-content-container">
+                      <div class="gear-content-header">
+                        <b>Timescale Formatting</b>
+                      </div>
+                      <div class="gear-content-body">
+                        <div class="timescale-formatting-content">
+                          <div class="timescale-formatting-data">
+                            <div class="check-select">
+                              <div class="check-name">
+                                <label class="custom-check">
+                                  <i class="fa-regular fa-check"></i>
+                                  <input type="checkbox" />
+                                </label>
+                              </div>
+                              <div class="select-box">
+                                <b>Row 1</b>
+                                <select>
+                                  <option>Year</option>
+                                  <option>option 1</option>
+                                  <option>option 2</option>
+                                  <option>option 3</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="check-select">
+                              <div class="check-name">
+                                <label class="custom-check">
+                                  <i class="fa-regular fa-check"></i>
+                                  <input type="checkbox" />
+                                </label>
+                              </div>
+                              <div class="select-box">
+                                <b>Row 2</b>
+                                <select>
+                                  <option>Month</option>
+                                  <option>option 1</option>
+                                  <option>option 2</option>
+                                  <option>option 3</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="check-select">
+                              <div class="check-name">
+                                <label class="custom-check">
+                                  <i class="fa-regular fa-check"></i>
+                                  <input type="checkbox" />
+                                </label>
+                              </div>
+                              <div class="select-box">
+                                <b>Row 3</b>
+                                <select>
+                                  <option>Day</option>
+                                  <option>option 1</option>
+                                  <option>option 2</option>
+                                  <option>option 3</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="timescale-formatting-data">
+                            <div class="check-select">
+                              <div class="check-name">
+                                <label class="custom-check">
+                                  <i class="fa-regular fa-check"></i>
+                                  <input type="checkbox" />
+                                </label>
+                              </div>
+                              <div class="select-box">
+                                <b>Ordinal</b>
+                                <select>
+                                  <option>Data Date</option>
+                                  <option>option 1</option>
+                                  <option>option 2</option>
+                                  <option>option 3</option>
+                                </select>
+                                <span>Start</span>
+                              </div>
+                            </div>
+                            <div class="check-select">
+                              <div class="select-box">
+                                <b>Row 2</b>
+                                <select>
+                                  <option>Month</option>
+                                  <option>option 1</option>
+                                  <option>option 2</option>
+                                  <option>option 3</option>
+                                </select>
+                                <span>Interval</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="gear-menu-opt-container"
+                    data-gear-menu-container-name="chartline">
+                    <div class="gear-content-container">
+                      <div class="gear-content-header">
+                        <b>Chart Line Formatting</b>
+                      </div>
+                      <div class="gear-content-body">
+                        <div class="chart-line-content">
+                          <div class="line-axis">
+                            <div class="line-axis-title">Vertical Lines</div>
+                            <div class="line-axis-content">
+                              <div class="line-axis-type">
+                                <div class="check-name">
+                                  <label class="custom-check">
+                                    <i class="fa-regular fa-check"></i>
+                                    <input type="checkbox" />
+                                  </label>
+                                  <span>Vertical line 1</span>
+                                </div>
+                                <div class="line-axis-selects">
+                                  <div
+                                    class="line-axis-select style-axis-select">
+                                    <b>Style</b>
+                                    <div class="select-type">
+                                      <i class="fa-regular fa-chevron-down"></i>
+                                      <div>
+                                        <span></span>
+                                      </div>
+                                      <select>
+                                        <option> Option 1</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="line-axis-select size-axis-select">
+                                    <b>Size</b>
+                                    <div class="select-type">
+                                      <i class="fa-regular fa-chevron-down"></i>
+                                      <div>
+                                        <i class="fa-solid fa-hyphen"></i>
+                                        <span>Large</span>
+                                      </div>
+                                      <select>
+                                        <option>Option 1</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="line-axis-select show-axis-select">
+                                    <b>Show Every</b>
+                                    <div class="select-type">
+                                      <select>
+                                        <option> 1</option>
+                                        <option> 2</option>
+                                        <option> 3</option>
+                                      </select>
+                                      <select>
+                                        <option> Quarter</option>
+                                        <option> 2</option>
+                                        <option> 3</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="line-axis-type">
+                                <div class="check-name">
+                                  <label class="custom-check">
+                                    <i class="fa-regular fa-check"></i>
+                                    <input type="checkbox" />
+                                  </label>
+                                  <span>Vertical line 2</span>
+                                </div>
+                                <div class="line-axis-selects">
+                                  <div
+                                    class="line-axis-select style-axis-select">
+                                    <b>Style</b>
+                                    <div class="select-type">
+                                      <i class="fa-regular fa-chevron-down"></i>
+                                      <div>
+                                        <span></span>
+                                      </div>
+                                      <select>
+                                        <option>Option 1</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="line-axis-select size-axis-select">
+                                    <b>Size</b>
+                                    <div class="select-type">
+                                      <i class="fa-regular fa-chevron-down"></i>
+                                      <div>
+                                        <i class="fa-solid fa-hyphen"></i>
+                                        <span>Large</span>
+                                      </div>
+                                      <select>
+                                        <option>Option 1</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="line-axis-select show-axis-select">
+                                    <b>Show Every</b>
+                                    <div class="select-type">
+                                      <select>
+                                        <option> 1</option>
+                                        <option> 2</option>
+                                        <option> 3</option>
+                                      </select>
+                                      <select>
+                                        <option> Quarter</option>
+                                        <option> 2</option>
+                                        <option> 3</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="line-axis">
+                            <div class="line-axis-title"> Horizontal Lines</div>
+                            <div class="line-axis-content">
+                              <div class="line-axis-type">
+                                <div class="check-name">
+                                  <label class="custom-check">
+                                    <i class="fa-regular fa-check"></i>
+                                    <input type="checkbox" />
+                                  </label>
+                                  <span>Horizontal line 1</span>
+                                </div>
+                                <div class="line-axis-selects">
+                                  <div
+                                    class="line-axis-select style-axis-select">
+                                    <b>Style</b>
+                                    <div class="select-type">
+                                      <i class="fa-regular fa-chevron-down"></i>
+                                      <div>
+                                        <span></span>
+                                      </div>
+                                      <select>
+                                        <option>Option 1</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="line-axis-select size-axis-select">
+                                    <b>Size</b>
+                                    <div class="select-type">
+                                      <i class="fa-regular fa-chevron-down"></i>
+                                      <div>
+                                        <i class="fa-solid fa-hyphen"></i>
+                                        <span>Large</span>
+                                      </div>
+                                      <select>
+                                        <option>Option 1</option>
+                                        <option>Option 2</option>
+                                        <option>Option 3</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="line-axis-select single-row-axis-select">
+                                    <b>Show Every</b>
+                                    <div class="select-type">
+                                      <select>
+                                        <option>1 Row</option>
+                                        <option> 1</option>
+                                        <option> 2</option>
+                                        <option> 3</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="gear-menu-opt-container"
+                    data-gear-menu-container-name="data_date">
+                    <div class="gear-content-container">
+                      <div class="gear-content-header">
+                        <b>Data Date & Today Lines </b>
+                      </div>
+                      <div class="gear-content-body">
+                        <div class="gear-data-date-content">
+                          <div class="data-date-type">
+                            <div class="data-date-title">
+                              <label class="custom-check">
+                                <i class="fa-regular fa-check"></i>
+                                <input type="checkbox" />
+                              </label>
+                              <span>Data Date Line</span>
+                            </div>
+                            <div class="data-date-selects-content">
+                              <div
+                                class="data-date-select-main date-style-select">
+                                <b>Style</b>
+                                <div class="select-type">
+                                  <i class="fa-regular fa-chevron-down"></i>
+                                  <div>
+                                    <span></span>
+                                  </div>
+                                  <select>
+                                    <option>Option 1</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div
+                                class="data-date-select-main date-color-select">
+                                <b>Color</b>
+                                <div class="select-type">
+                                  <i class="fa-regular fa-chevron-down"></i>
+                                  <div style="background: #0c30e4"> </div>
+                                  <select>
+                                    <option>Option 1</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div
+                                class="data-date-select-main date-size-select">
+                                <b>Size</b>
+                                <div class="select-type">
+                                  <i class="fa-regular fa-chevron-down"></i>
+                                  <div>
+                                    <i class="fa-solid fa-hyphen"></i>
+                                    <span>Large</span>
+                                  </div>
+                                  <select>
+                                    <option>Option 1</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="data-date-type">
+                            <div class="data-date-title">
+                              <label class="custom-check">
+                                <i class="fa-regular fa-check"></i>
+                                <input type="checkbox" />
+                              </label>
+                              <span>Today line</span>
+                            </div>
+                            <div class="data-date-selects-content">
+                              <div
+                                class="data-date-select-main date-style-select">
+                                <b>Style</b>
+                                <div class="select-type">
+                                  <i class="fa-regular fa-chevron-down"></i>
+                                  <div>
+                                    <span></span>
+                                  </div>
+                                  <select>
+                                    <option>Option 1</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div
+                                class="data-date-select-main date-color-select">
+                                <b>Color</b>
+                                <div class="select-type">
+                                  <i class="fa-regular fa-chevron-down"></i>
+                                  <div style="background: #d13f04"> </div>
+                                  <select>
+                                    <option>Option 1</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div
+                                class="data-date-select-main date-size-select">
+                                <b>Size</b>
+                                <div class="select-type">
+                                  <i class="fa-regular fa-chevron-down"></i>
+                                  <div>
+                                    <i class="fa-solid fa-hyphen"></i>
+                                    <span>Large</span>
+                                  </div>
+                                  <select>
+                                    <option>Option 1</option>
+                                    <option>Option 2</option>
+                                    <option>Option 3</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="gear-popup-submit-buttons">
+            <button class="cancel">Cancel</button>
+            <button class="apply">Apply</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+<script>
+  // Team tab table data
+  const team_tableData = {
+    headers: [
+      {
+        value: null,
+        baseline: null,
+      },
+      {
+        value: 32,
+        baseline: 32,
+      },
+      {
+        value: 32,
+        baseline: 23,
+      },
+      {
+        value: 32,
+        baseline: 32,
+      },
+      {
+        value: 32,
+        baseline: 23,
+      },
+      {
+        value: 32,
+        baseline: 32,
+      },
+      {
+        value: 32,
+        baseline: 23,
+      },
+      {
+        value: 32,
+        baseline: 32,
+      },
+      {
+        value: 32,
+        baseline: 23,
+      },
+      {
+        value: 32,
+        baseline: 32,
+      },
+      {
+        value: 32,
+        baseline: 23,
+      },
+      {
+        value: 32,
+        baseline: 32,
+      },
+      {
+        value: 32,
+        baseline: 23,
+      },
+      {
+        value: 32,
+        baseline: 32,
+      },
+      {
+        value: 32,
+        baseline: 23,
+      },
+      {
+        value: 32,
+        baseline: 32,
+      },
+      {
+        value: 32,
+        baseline: 23,
+      },
+      {
+        value: 32,
+        baseline: 32,
+      },
+      {
+        value: 32,
+        baseline: 23,
+      },
+      {
+        value: 32,
+        baseline: 23,
+      },
+      {
+        value: 32,
+        baseline: 32,
+      },
+      {
+        value: 32,
+        baseline: 23,
+      },
+      {
+        value: 32,
+        baseline: 32,
+      },
+      {
+        value: 32,
+        baseline: 32,
+      },
+      {
+        value: null,
+        baseline: null,
+      },
+    ],
+    body: [
+      {
+        row: 1,
+        colmuns: [
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+        ],
+      },
+      {
+        row: 2,
+        colmuns: [
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+        ],
+      },
+      {
+        row: 3,
+        colmuns: [
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+        ],
+      },
+      {
+        row: 4,
+        colmuns: [
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+        ],
+      },
+      {
+        row: 5,
+        colmuns: [
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+        ],
+      },
+    ],
+  };
+  const team_table_red_line = 5;
+  const team_table_grey_line = 5;
+  // Trade tab table data
+  const trade_tableData = {
+    headers: [
+      {
+        value: null,
+        baseline: null,
+      },
+      {
+        value: 32,
+        baseline: 32,
+      },
+      {
+        value: 32,
+        baseline: 23,
+      },
+      {
+        value: 32,
+        baseline: 32,
+      },
+      {
+        value: 32,
+        baseline: 23,
+      },
+      {
+        value: 32,
+        baseline: 32,
+      },
+      {
+        value: 32,
+        baseline: 23,
+      },
+      {
+        value: 32,
+        baseline: 32,
+      },
+      {
+        value: 32,
+        baseline: 23,
+      },
+      {
+        value: 32,
+        baseline: 32,
+      },
+      {
+        value: 32,
+        baseline: 23,
+      },
+      {
+        value: 32,
+        baseline: 32,
+      },
+      {
+        value: 32,
+        baseline: 23,
+      },
+      {
+        value: 32,
+        baseline: 32,
+      },
+      {
+        value: 32,
+        baseline: 23,
+      },
+      {
+        value: 32,
+        baseline: 32,
+      },
+      {
+        value: 32,
+        baseline: 23,
+      },
+      {
+        value: 32,
+        baseline: 32,
+      },
+      {
+        value: 32,
+        baseline: 23,
+      },
+      {
+        value: 32,
+        baseline: 23,
+      },
+      {
+        value: 32,
+        baseline: 32,
+      },
+      {
+        value: 32,
+        baseline: 23,
+      },
+      {
+        value: 32,
+        baseline: 32,
+      },
+      {
+        value: 32,
+        baseline: 32,
+      },
+      {
+        value: null,
+        baseline: null,
+      },
+    ],
+    body: [
+      {
+        row: 1,
+        colmuns: [
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+        ],
+      },
+      {
+        row: 2,
+        colmuns: [
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+        ],
+      },
+      {
+        row: 3,
+        colmuns: [
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: 44,
+            baseline: null,
+          },
+          {
+            value: 32,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: 21,
+            baseline: 55,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: 3333,
+            baseline: null,
+          },
+        ],
+      },
+      {
+        row: 4,
+        colmuns: [
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: 333,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+        ],
+      },
+      {
+        row: 5,
+        colmuns: [
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: 32,
+            baseline: 32,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: 222,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+          {
+            value: null,
+            baseline: null,
+          },
+        ],
+      },
+    ],
+  };
+  const trade_table_red_line = 7;
+  const trade_table_grey_line = 7;
+
+  // Chart Data
+  const firstHalfBarsItemStyle = { color: "#002F59", borderColor: "#002F59" };
+  const secondHalfBarsItemStyle = { color: "#88AFD2", borderColor: "#002F59" };
+  const baselineItemStyle = { color: "#FFCC00", borderColor: "#E4730C" };
+
+  const team_chartData = {
+    chartBarTitle: "Chart Bar Title",
+    baselineBarTitle: "Baseline Title",
+    barData: [
+      //first half
+      { value: 200, itemStyle: firstHalfBarsItemStyle },
+      { value: 300, itemStyle: firstHalfBarsItemStyle },
+      { value: 220, itemStyle: firstHalfBarsItemStyle },
+      { value: 100, itemStyle: firstHalfBarsItemStyle },
+      { value: 80, itemStyle: firstHalfBarsItemStyle },
+      { value: 120, itemStyle: firstHalfBarsItemStyle },
+      { value: 180, itemStyle: firstHalfBarsItemStyle },
+      { value: 40, itemStyle: firstHalfBarsItemStyle },
+      { value: 100, itemStyle: firstHalfBarsItemStyle },
+      { value: 200, itemStyle: firstHalfBarsItemStyle },
+      { value: 200, itemStyle: firstHalfBarsItemStyle },
+      { value: 100, itemStyle: firstHalfBarsItemStyle },
+      { value: 150, itemStyle: firstHalfBarsItemStyle },
+      //second half
+      { value: 100, itemStyle: secondHalfBarsItemStyle },
+      { value: 150, itemStyle: secondHalfBarsItemStyle },
+      { value: 63, itemStyle: secondHalfBarsItemStyle },
+      { value: 100, itemStyle: secondHalfBarsItemStyle },
+      { value: 90, itemStyle: secondHalfBarsItemStyle },
+      { value: 50, itemStyle: secondHalfBarsItemStyle },
+      { value: 70, itemStyle: secondHalfBarsItemStyle },
+      { value: 40, itemStyle: secondHalfBarsItemStyle },
+      { value: 50, itemStyle: secondHalfBarsItemStyle },
+      { value: 20, itemStyle: secondHalfBarsItemStyle },
+      { value: 40, itemStyle: secondHalfBarsItemStyle },
+      { value: 60, itemStyle: secondHalfBarsItemStyle },
+      { value: 50, itemStyle: secondHalfBarsItemStyle },
+      { value: 70, itemStyle: secondHalfBarsItemStyle },
+      { value: 80, itemStyle: secondHalfBarsItemStyle },
+    ],
+    baselineBarsData: [
+      { value: 80, itemStyle: baselineItemStyle },
+      { value: 120, itemStyle: baselineItemStyle },
+      { value: 120, itemStyle: baselineItemStyle },
+      { value: 80, itemStyle: baselineItemStyle },
+      { value: 130, itemStyle: baselineItemStyle },
+      { value: 40, itemStyle: baselineItemStyle },
+      { value: 90, itemStyle: baselineItemStyle },
+      { value: 40, itemStyle: baselineItemStyle },
+      { value: 130, itemStyle: baselineItemStyle },
+      { value: 250, itemStyle: baselineItemStyle },
+      { value: 100, itemStyle: baselineItemStyle },
+      { value: 150, itemStyle: baselineItemStyle },
+      { value: 80, itemStyle: baselineItemStyle },
+      { value: 90, itemStyle: baselineItemStyle },
+      { value: 67, itemStyle: baselineItemStyle },
+      { value: 30, itemStyle: baselineItemStyle },
+      { value: 40, itemStyle: baselineItemStyle },
+      { value: 180, itemStyle: baselineItemStyle },
+    ],
+    baseLine: [
+      [0, 20],
+      [4, 35],
+      [6, 45],
+      [13, 125],
+      [24, 130],
+    ],
+    redLine: 12,
+    greyline: 12,
+    labels: [
+      1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
+      22, 23, 24,
+    ],
+  };
+  //
+  const trade_chartData = {
+    chartBarTitle: "Chart Bar Title",
+    baselineBarTitle: "Baseline Title",
+    barData: [
+      //first half
+      { value: 120, itemStyle: firstHalfBarsItemStyle },
+      { value: 180, itemStyle: firstHalfBarsItemStyle },
+      { value: 40, itemStyle: firstHalfBarsItemStyle },
+      { value: 100, itemStyle: firstHalfBarsItemStyle },
+      { value: 200, itemStyle: firstHalfBarsItemStyle },
+      { value: 250, itemStyle: firstHalfBarsItemStyle },
+      { value: 220, itemStyle: firstHalfBarsItemStyle },
+      { value: 100, itemStyle: firstHalfBarsItemStyle },
+      { value: 80, itemStyle: firstHalfBarsItemStyle },
+      { value: 200, itemStyle: firstHalfBarsItemStyle },
+      { value: 200, itemStyle: firstHalfBarsItemStyle },
+      { value: 100, itemStyle: firstHalfBarsItemStyle },
+      { value: 150, itemStyle: firstHalfBarsItemStyle },
+      //second half
+      { value: 70, itemStyle: secondHalfBarsItemStyle },
+      { value: 100, itemStyle: secondHalfBarsItemStyle },
+      { value: 50, itemStyle: secondHalfBarsItemStyle },
+      { value: 150, itemStyle: secondHalfBarsItemStyle },
+      { value: 63, itemStyle: secondHalfBarsItemStyle },
+      { value: 100, itemStyle: secondHalfBarsItemStyle },
+      { value: 90, itemStyle: secondHalfBarsItemStyle },
+      { value: 50, itemStyle: secondHalfBarsItemStyle },
+      { value: 70, itemStyle: secondHalfBarsItemStyle },
+      { value: 60, itemStyle: secondHalfBarsItemStyle },
+      { value: 40, itemStyle: secondHalfBarsItemStyle },
+      { value: 20, itemStyle: secondHalfBarsItemStyle },
+      { value: 40, itemStyle: secondHalfBarsItemStyle },
+      { value: 80, itemStyle: secondHalfBarsItemStyle },
+      { value: 50, itemStyle: secondHalfBarsItemStyle },
+    ],
+    baselineBarsData: [
+      { value: 80, itemStyle: baselineItemStyle },
+      { value: 120, itemStyle: baselineItemStyle },
+      { value: 120, itemStyle: baselineItemStyle },
+      { value: 80, itemStyle: baselineItemStyle },
+      { value: 130, itemStyle: baselineItemStyle },
+      { value: 90, itemStyle: baselineItemStyle },
+      { value: 67, itemStyle: baselineItemStyle },
+      { value: 30, itemStyle: baselineItemStyle },
+      { value: 40, itemStyle: baselineItemStyle },
+      { value: 40, itemStyle: baselineItemStyle },
+      { value: 90, itemStyle: baselineItemStyle },
+      { value: 40, itemStyle: baselineItemStyle },
+      { value: 130, itemStyle: baselineItemStyle },
+      { value: 250, itemStyle: baselineItemStyle },
+      { value: 100, itemStyle: baselineItemStyle },
+      { value: 150, itemStyle: baselineItemStyle },
+      { value: 80, itemStyle: baselineItemStyle },
+      { value: 90, itemStyle: baselineItemStyle },
+      { value: 67, itemStyle: baselineItemStyle },
+      { value: 30, itemStyle: baselineItemStyle },
+      { value: 40, itemStyle: baselineItemStyle },
+      { value: 180, itemStyle: baselineItemStyle },
+    ],
+    baseLine: [
+      [0, 20],
+      [4, 35],
+      [6, 45],
+      [13, 125],
+      [24, 130, 22],
+    ],
+    redLine: 16.1,
+    greyline: 16.1,
+    labels: [
+      1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
+      22, 23, 24,
+    ],
+  };
+</script>
+<script src="script.js"></script>
